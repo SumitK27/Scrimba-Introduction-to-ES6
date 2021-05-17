@@ -1,0 +1,9 @@
+function add(param1,) {	// No error
+    const example = {
+        name: 'Niko',
+    };
+
+    console.log(example);
+}
+
+add(2);

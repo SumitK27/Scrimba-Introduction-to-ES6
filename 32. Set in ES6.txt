@@ -1,0 +1,16 @@
+const exampleSet = new Set([1, 1, 1, 2, 2, 2]);
+
+console.log(exampleSet);
+console.log(exampleSet.size);
+
+exampleSet.add(5);
+exampleSize.add(5); // Will be ignaored due to duplicate value
+console.log(exampleSet);
+
+console.log(exampleSet.delete(5)); // will return true
+console.log(exampleSet.has(5));
+
+exampleSet.clear();
+console.log(exampleSet.size);
+
+// Set is iterable

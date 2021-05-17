@@ -1,0 +1,19 @@
+// Normal Assignment
+
+let contacts = ["Mary", "Joel", "Danny"];
+let personalFriends = contacts;
+contacts.push("John");
+
+// John will be added to personalFriends list as we are not creating a new array
+// instead we are giving the reference of contacts to personamFriends
+console.log(personalFriends);
+
+// Spread Operator [ ...ArrayName ] helps to create a copy of array at that instance
+
+let contacts = ["Mary", "Joel", "Danny"];
+let personalFriends = [ ...contacts ];
+contacts.push("John");
+console.log(personalFriends);
+
+// [ "ElementToAddBefore", ...Array, "ElementToAddAfter" ]
+// let personalFriends = [ "David", ...contacts, "Lily" ];

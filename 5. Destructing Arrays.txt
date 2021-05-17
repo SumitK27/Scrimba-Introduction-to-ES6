@@ -1,0 +1,5 @@
+let [first, second] = ['A', 'D', 'C'];
+
+second = 'B'
+
+console.log(`${first} ${second}`);

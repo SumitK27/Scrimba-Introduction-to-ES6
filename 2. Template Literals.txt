@@ -1,0 +1,7 @@
+let fname = 'Niko';
+let lname = 'Bellic';
+let msg = `${fname}
+${lname}`;
+document.getElementById('para').innerText = msg;
+
+// Add a p tag with id 'para' in html file

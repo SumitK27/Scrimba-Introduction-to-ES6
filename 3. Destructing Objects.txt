@@ -1,0 +1,15 @@
+const cartoon = {
+    name: "Ben 10 Alien Force",
+    Franchis: "Ben 10",
+    more: {
+        country: "USA",
+        startedIn: 2012
+    }
+}
+
+// Plain way
+console.log(`${cartoon.name} franchies of ${cartoon.Franchis} which is a ${cartoon.more.country} based TV Show which started in ${cartoon.more.startedIn}`);
+
+// Object Destructuring way
+const { name, Franchis, more: { country, startedIn } } = cartoon;
+console.log(`${name} franchies of ${Franchis} which is a ${country} based TV Show which started in ${startedIn}`);

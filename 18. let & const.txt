@@ -1,0 +1,28 @@
+if (false) {
+    var example = 5;
+}
+console.log(example); // 5
+
+// Interpretation
+var example;
+if (false) {
+    example = 5;
+}
+
+// let (same interpretation)
+if (false) {
+    let example = 5;
+}
+console.log(example); // Error: not defined
+
+// const
+const example = 5;
+console.log(example);
+
+const ex = [];
+ex.push(5);
+console.log(ex);
+
+const eg = {};
+example.firstName = 'Niko'
+console.log(eg);

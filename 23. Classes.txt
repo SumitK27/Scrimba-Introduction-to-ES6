@@ -1,0 +1,44 @@
+//animal.js
+export class Animal {
+    constructor(type, legs) {
+        this.type = type;
+        this.legs = legs;
+    }
+    makeNoise(sound = 'Loud Noice') {
+        console.log(sound);
+    }
+    get metaData() {
+        return `Type: ${this.type}, Legs: ${this.legs}`;
+    }
+    static return10() {
+        return 10;
+    }
+}
+
+export class Cat extends Animal {
+    constructor(type, legs, tail) {
+        super(type, legs);
+        this.tail = tail;
+    }
+    makeNoise(sound = "meow") {
+        console.log(sound);
+    }
+}
+
+// index.js
+import { Animal, Cat } from './animal.js';
+
+let cat = new Animal('Cat', 4);
+
+cat.legs = 3;
+cat.makeNoice('Meow');
+// console.log(cat.type);
+// console.log(cat.legs);
+console.log(cat.metaData);
+
+console.log(Animal.return());
+
+
+let cat = new Cat('Cat', 4);
+cat.makeNoise();
+console.log(cat.metaData);

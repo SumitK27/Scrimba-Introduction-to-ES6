@@ -1,0 +1,6 @@
+let example = 'Niko';
+
+console.log(example.padStart(10));	// Niko      
+console.log(example.padStart(10).length); // 10
+console.log(example.padEnd(5));	// Niko 
+console.log(example.padEnd(5).length);	// 5

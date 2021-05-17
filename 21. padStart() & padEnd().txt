@@ -1,0 +1,4 @@
+let example = 'Niko';
+
+console.log(example.padStart(10, 'a')); // aaaaaaNiko
+console.log(example.padEnd(10, 'b'));  // Nikobbbbbb
